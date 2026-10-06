@@ -7,6 +7,7 @@
     const p = RufflePlayer.newest().createPlayer();
     p.style.cssText = "width:100vw;height:100vh;display:block";
     document.body.append(p);
-    p.load("commandoassualt.swf");
+    // game sets noScale + top-left align on its stage; force fit and center
+    p.load({ url: "commandoassualt.swf", scale: "showAll", forceScale: true, salign: "", forceAlign: true });
   });
 </script>
