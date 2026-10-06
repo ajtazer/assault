@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Commando Assault</title>
+<style>body{margin:0;background:#000}</style>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script>
+  addEventListener("load", () => {
+    const p = RufflePlayer.newest().createPlayer();
+    p.style.cssText = "width:100vw;height:100vh;display:block";
+    document.body.append(p);
+    p.load("commandoassualt.swf");
+  });
+</script>
